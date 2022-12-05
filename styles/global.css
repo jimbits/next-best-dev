@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ 
+   
+@layer base {
+    .textShadow {
+       text-shadow:   -7px -7px 1px #CE1FA4; 
+    }
+  }

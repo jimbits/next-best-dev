@@ -1,0 +1,31 @@
+{
+  "name": "next-best-dev",
+  "version": "0.1.0",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jimbits/next-best-dev.git"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "clean": "rm -rf .next .vercel node_modules"
+  },
+  "dependencies": {
+    "@mdx-js/loader": "^2.1.5",
+    "@mdx-js/react": "^2.1.5",
+    "@next/mdx": "^13.0.2",
+    "next": "^13.0.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.18",
+    "react-icons": "^4.6.0",
+    "tailwindcss": "^3.2.1",
+    "vercel": "^28.4.14"
+  }
+}
