@@ -4,7 +4,7 @@ const words =
   );
 
 const joiner = "and with for is was the using of".split(" ");
-const numberOfWordsInTitle = randomNumber(1, 5);
+const numberOfWordsInTitle = randomNumber(3, 5);
 
 let title = ``;
 
@@ -22,6 +22,7 @@ function toUpper(makeUpperCase) {
 }
 
 export function generateRandomTitle(){
+  title=``
    
     for (let i = 0; i < numberOfWordsInTitle; i++) {
        
@@ -32,13 +33,11 @@ export function generateRandomTitle(){
        
       
       
-        if (i === 2) {
-          title += " With" 
+        if (i === 3) {
+          title += " " + toUpper(joiner[Math.floor(Math.random() * joiner.length)]);
         }
       
-        if (i === 3) {
-          title += " For"
-        }
+     
         title += " " + toUpper(words[Math.floor(Math.random() * words.length)]);
       }
       
